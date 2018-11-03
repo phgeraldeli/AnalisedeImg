@@ -19,6 +19,10 @@ int main()
 	cvNamedWindow("Raw");
 	cvShowImage("Raw", img);
 
+
+	asdasdasd
+
+
 	
 	
 	//converting the original image into grayscale
