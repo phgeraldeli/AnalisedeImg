@@ -1,3 +1,4 @@
+/*
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -12,19 +13,13 @@ using namespace std;
 int main()
 {
 
-	IplImage* img = cvLoadImage("NoParking.jpg");
+	IplImage* img = cvLoadImage("formas.png");
 	
 	//show the original image
 	
 	cvNamedWindow("Raw");
 	cvShowImage("Raw", img);
 
-
-	asdasdasd
-
-
-	
-	
 	//converting the original image into grayscale
 	IplImage* imgGrayScale = cvCreateImage(cvGetSize(img), 8, 1);
 	IplImage* imgCanny = cvCreateImage(cvGetSize(img), 8, 1);
@@ -109,7 +104,7 @@ int main()
 		imgCanny->height / 4,
 		200,
 		100);
-	/*
+	
 	for (int i = 0; i < circles->total; i++)
 	{
 		float* p = (float*)cvGetSeqElem(circles, i);
@@ -118,7 +113,7 @@ int main()
 		cvCircle(img, cvPoint(cvRound(p[0]), cvRound(p[1])),
 			cvRound(p[2]), CV_RGB(0, 255, 255), 3, 8, 0);
 	}
-	*/
+	
 	//show the image in which identified shapes are marked   
 	cvNamedWindow("Tracked");
 	cvShowImage("Tracked", img);
@@ -133,3 +128,4 @@ int main()
 
 	return 0;
 }
+*/
